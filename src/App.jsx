@@ -16,11 +16,11 @@ function App() {
               className="m-5 md:mx-auto md:w-[70%] md:h-auto max-h-[100%] rounded-lg "
             />
             <div className="flex flex-col justify-center items-center w-full mx-auto">
-              <h5 className="text-3xl poppins-semibold">Nischal Jain</h5>
-              <p className="md:mx-3 text-sm mx-auto poppins-regular ">
+              <h5 className="text-3xl md:text-4xl poppins-semibold">Nischal Jain</h5>
+              <p className="md:mx-3 md:text-base text-sm mx-auto poppins-regular ">
                 Passionate about <strong>Core CS</strong> and <strong>building things</strong>
               </p>
-              <p className="poppins-regular text-sm">Fullstack | Web | Mobile</p>
+              <p className="poppins-regular md:text-base text-sm">Fullstack | Web | Mobile</p>
               <div className="hidden md:block w-[80%] my-4">
                 <div className="bg-blue-500 h-[1px] w-full "></div>
                 <div className="m-auto my-4">
