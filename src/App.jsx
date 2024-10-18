@@ -39,11 +39,11 @@ function App() {
               className="m-5 md:mx-auto md:w-[70%] md:h-auto max-h-[100%] rounded-lg "
             />
             <div className="flex flex-col justify-center items-center w-full mx-auto space-y-2">
-              <h5 className="text-3xl md:text-4xl poppins-semibold">
+              <h5 className="text-3xl lg:text-4xl poppins-semibold">
                 Nischal Jain
               </h5>
-              <p className="md:mx-3 md:text-base text-xs mx-auto poppins-regular ">
-                <span className="hidden md:inline">Passionate about</span>{" "}
+              <p className="lg:mx-3 lg:text-base text-xs mx-auto poppins-regular ">
+                <span className="hidden lg:inline">Passionate about</span>{" "}
                 <strong>Core CS</strong> and <strong>building things</strong>
               </p>
               <p className="poppins-regular md:text-base text-xs">
@@ -51,15 +51,15 @@ function App() {
               </p>
               <div className="hidden md:block space-y-6 w-[80%] my-4 ">
                 <div className="bg-blue-500 h-[1px] w-full "></div>
-                <div className="">
+                <div className="flex lg:flex-row lg:gap-0 flex-col">
                   <p className="poppins-semibold inline">Email:</p>
-                  <p className="inline mx-2">contactmenischal@gmail.com</p>
+                  <p className="inline mx-2 lg:text-base text-xs">contactmenischal@gmail.com</p>
                 </div>
-                <div className="">
+                <div className="flex lg:flex-row flex-col">
                   <p className="poppins-semibold inline">Location:</p>
                   <p className="inline mx-2">Bangalore</p>
                 </div>
-                <div className="">
+                <div className="flex lg:flex-row flex-col">
                   <p className="poppins-semibold inline">Ph no:</p>
                   <p className="inline mx-2">+91 9380060740</p>
                 </div>
@@ -76,7 +76,7 @@ function App() {
                 </div>
               </div>
               <div className="bg-white rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer hover:bg-gray-100">
-                Education
+                Education and Achievements
               </div>
               <div className="bg-white rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer hover:bg-gray-100">
                 Skills
