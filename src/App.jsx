@@ -1,33 +1,38 @@
 import sherdil from "./assets/sherdil.jpg";
-import Contri from "./components/Contri"
+import Contri from "./components/Contri";
 import "./App.css";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [sampledata1, setsampledata] = useState({})
-  useEffect(() => {
+  function setcontri(setsampledata1,sampledata1){
     for (let i = 0; i < 32; i++) {
-      let a =Math.floor(Math.random()*10)
-      if(a==sampledata1[i-1] || a==sampledata1[i-1]-1||a==sampledata1[i-1]+1){
-        i--
-        continue
+      let a = Math.floor(Math.random() * 10);
+      if (
+        a == sampledata1[i - 1] ||
+        a == sampledata1[i - 1] - 1 ||
+        a == sampledata1[i - 1] + 1
+      ) {
+        i--;
+        continue;
       }
-      setsampledata(prevContributions => ({
+      setsampledata1((prevContributions) => ({
         ...prevContributions,
-        [i]: (a || 0)
+        [i]: a || 0,
       }));
-      console.log(a)
-      console.log(sampledata1)
     }
-  }, [])
-  
-  
+  }
+  const [sampledata1, setsampledata1] = useState({});
+  const [sampledata2, setsampledata2] = useState({});
+  useEffect(() => {
+    setcontri(setsampledata1,sampledata1)
+    setcontri(setsampledata2,sampledata2)
+  }, []);
 
   return (
     <>
       <div className="md:p-8 p-4 m-1  bg-[#ffffff]">
         <div className="flex gap-[5vw] flex-col md:flex-row bg-[#ffffff]">
-          <div className="rounded-xl bg-[#e9faff] ml-[-11px] md:pt-6  w-[95vw] md:w-[30%] h-[20vh] md:h-[90vh] flex flex-row md:flex-col">
+          <div className="rounded-xl bg-blue-50 ml-[-11px] md:pt-6  w-[95vw] md:w-[30%] h-[20vh] md:h-[90vh] flex flex-row md:flex-col">
             <img
               src={sherdil}
               alt=""
@@ -61,19 +66,27 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="rounded-xl bg-[#e9faff]  ml-[-11px] w-[95vw] md:w-[70%] h-[90vh] md:h-[90vh] ">
-            <div className=" h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4 max-w-6xl mx-auto">
-              <div className="hover:bg-gray-100 bg-white rounded-lg p-3  flex flex-col md:text-4xl justify-evenly items-center text-lg min-h-[100px] sm:col-span-2 lg:col-span-2 poppins-regular cursor-pointer">Projects
+          <div className="rounded-xl bg-purple-200  ml-[-11px] w-[95vw] md:w-[70%] h-[90vh] md:h-[90vh] ">
+            <div className=" h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4 max-w-6xl mx-auto poppins-regular">
+              <div className="hover:bg-gray-100 bg-white rounded-lg p-3  flex flex-col md:text-4xl justify-evenly items-center text-lg min-h-[100px] sm:col-span-2 lg:col-span-2  cursor-pointer">
+                Projects
                 <div className="flex gap-5 md:m-[-35px]">
-
-                <Contri data={sampledata1} />
-                <Contri data={sampledata1} />
+                  <Contri data={sampledata1} />
+                  <Contri data={sampledata2} />
                 </div>
               </div>
-              <div className="bg-white rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] ">Education</div>
-              <div className="bg-white rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] ">Skills</div>
-              <div className="bg-white rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] ">Links</div>
-              <div className="bg-white rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] ">Resume</div>
+              <div className="bg-white rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer hover:bg-gray-100">
+                Education
+              </div>
+              <div className="bg-white rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer hover:bg-gray-100">
+                Skills
+              </div>
+              <div className="bg-white rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer hover:bg-gray-100">
+                Resume
+              </div>
+              <div className="bg-white rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer hover:bg-gray-100">
+                Coding and Social profiles
+              </div>
             </div>
           </div>
         </div>
@@ -81,7 +94,5 @@ function App() {
     </>
   );
 }
-
-
 
 export default App;
