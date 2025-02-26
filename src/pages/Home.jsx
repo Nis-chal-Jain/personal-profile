@@ -32,7 +32,7 @@ function Home() {
     <>
       <div className="md:p-8 p-4 m-1  bg-[hsla(0,0%,0%,1)]">
         <div className="flex gap-[5vw] flex-col md:flex-row bg-[hsla(0,0%,0%,1)] text-gray-50">
-          <div className="rounded-lg   bg-[hsla(0,0%,100%,0.09)]   bg-blue-50 ml-[-11px] md:pt-6  w-[95vw] md:w-[30%] h-[20vh] md:h-[90vh] flex flex-row md:flex-col">
+          <div className="rounded-lg   bg-[hsla(0,0%,100%,0.09)] ml-[-11px] md:pt-6  w-[95vw] md:w-[30%] h-[20vh] md:h-[90vh] flex flex-row md:flex-col">
             <img
               src={sherdil}
               alt=""
