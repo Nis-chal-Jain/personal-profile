@@ -32,7 +32,7 @@ function Home() {
     <>
       <div className="md:p-8 p-4 m-1  bg-[hsla(0,0%,0%,1)]">
         <div className="flex gap-[5vw] flex-col md:flex-row bg-[hsla(0,0%,0%,1)] text-gray-50">
-          <div className="rounded-lg opacity-0 animate-fade-in  bg-[hsla(0,0%,100%,0.09)] ml-[-11px] md:pt-6  w-[95vw] md:w-[30%] h-[20vh] md:h-[90vh] flex flex-row md:flex-col">
+          <div className="rounded-lg opacity-0 animate-fade-in-short  bg-[hsla(0,0%,100%,0.09)] ml-[-11px] md:pt-6  w-[95vw] md:w-[30%] h-[20vh] md:h-[90vh] flex flex-row md:flex-col">
             <img
               src={sherdil}
               alt=""
@@ -69,7 +69,7 @@ function Home() {
             </div>
           </div>
           <div className="rounded-lg   border border-gray-800   ml-[-11px] w-[95vw] md:w-[70%] h-[90vh] md:h-[90vh] ">
-            <div className=" opacity-0 animate-fade-in h-full hover:[border] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4 max-w-6xl mx-auto poppins-regular">
+            <div className=" opacity-0 animate-fade-in-long h-full hover:[border] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4 max-w-6xl mx-auto poppins-regular">
               <Link
                 to="/projects"
                 className=" bg-[hsla(0,0%,100%,0.09)]  hover:shadow-[0_3px_30px_rgba(0,128,0,0.8)]  rounded-lg p-3 flex flex-col md:text-4xl justify-evenly items-center text-lg min-h-[100px] sm:col-span-2 lg:col-span-2 cursor-pointer"
@@ -102,8 +102,12 @@ function Home() {
                 from {opacity: 0; }
               to {opacity: 1; }
   }
-              .animate-fade-in {
+              .animate-fade-in-short {
                 animation: fade-in 0.5s ease-in-out forwards;
+  }
+              .animate-fade-in-long {
+                animation: fade-in 0.5s ease-in-out forwards;
+                animation-delay: 0.5s;
   }`}
       </style>
     </>
