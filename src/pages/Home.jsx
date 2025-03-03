@@ -72,7 +72,7 @@ function Home() {
             <div className=" opacity-0 animate-fade-in-long h-full hover:[border] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4 max-w-6xl mx-auto poppins-regular">
               <Link
                 to="/projects"
-                className=" bg-[hsla(0,0%,100%,0.09)]  hover:shadow-[0_3px_30px_rgba(0,128,0,0.8)]  rounded-lg p-3 flex flex-col md:text-4xl justify-evenly items-center text-lg min-h-[100px] sm:col-span-2 lg:col-span-2 cursor-pointer"
+                className=" bg-[hsla(0,0%,100%,0.09)]  hover:shadow-[0_3px_0px_rgba(0,128,0,0.8)]  rounded-lg p-3 flex flex-col md:text-4xl justify-evenly items-center text-lg min-h-[100px] sm:col-span-2 lg:col-span-2 cursor-pointer"
               >
                 Projects
                 <div className="flex gap-5 md:m-[-35px]">
@@ -81,16 +81,16 @@ function Home() {
                 </div>
               </Link>
 
-              <Link to="/edu" className="bg-[hsla(0,0%,100%,0.09)] hover:shadow-[0_3px_30px_rgba(0,128,0,0.8)]  rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer ">
+              <Link to="/edu" className="bg-[hsla(0,0%,100%,0.09)] hover:shadow-[0_3px_0px_rgba(0,128,0,0.8)]  rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer ">
                 Education and Achievements
               </Link>
-              <Link to="/skills" className=" bg-[hsla(0,0%,100%,0.09)]  hover:shadow-[0_3px_30px_rgba(0,128,0,0.8)] rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer ">
+              <Link to="/skills" className=" bg-[hsla(0,0%,100%,0.09)]  hover:shadow-[0_3px_0px_rgba(0,128,0,0.8)] rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer ">
                 Skills
               </Link>
-              <Link to="/resume" className=" bg-[hsla(0,0%,100%,0.09)] hover:shadow-[0_3px_30px_rgba(0,128,0,0.8)]  rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer ">
+              <Link to="/resume" className=" bg-[hsla(0,0%,100%,0.09)] hover:shadow-[0_3px_0px_rgba(0,128,0,0.8)]  rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer ">
                 Resume
               </Link>
-              <Link to="/links" className=" bg-[hsla(0,0%,100%,0.09)] hover:shadow-[0_3px_30px_rgba(0,128,0,0.8)]  rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer ">
+              <Link to="/links" className=" bg-[hsla(0,0%,100%,0.09)] hover:shadow-[0_3px_0px_rgba(0,128,0,0.8)]  rounded-lg p-5 flex justify-center items-center text-lg min-h-[100px] cursor-pointer ">
                 Coding and Social profiles
               </Link>
             </div>
